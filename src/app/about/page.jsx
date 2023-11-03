@@ -1,5 +1,5 @@
 function About() {
-    return ( <div><p>About</p></div> );
+    return ( <div className="h-96"><p>About</p></div> );
 }
 
 export default About;

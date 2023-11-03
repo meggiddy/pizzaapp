@@ -3,7 +3,7 @@ export const metadata = {
     description: 'Contact',
   }
 function Contact() {
-    return ( <div><p>Contact</p></div> );
+    return ( <div className="h-96"><p>Contact</p></div> );
 }
 
 export default Contact;

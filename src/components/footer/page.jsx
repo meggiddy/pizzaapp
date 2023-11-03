@@ -1,36 +1,34 @@
 function Footer() {
   return (
-    <div className="flex pt-10 justify-center mx-0">
-      <div className="flex flex-col">
-        <a className="mb-4">INFORMATION</a>
+    <div className="flex flex-col lg:flex-row lg:justify-between md:flex-row md:justify-center mx-10 gap-6 py-6 md:py-12">
+      <div className="flex flex-col mb-6 md:mb-0">
+        <a className="mb-2 md:mb-4">INFORMATION</a>
         <a href="/">Home</a>
         <a href="/blog">Blog</a>
         <a href="/about">About Us</a>
         <a href="/products">Menu</a>
         <a href="/contact">Contact Us</a>
       </div>
-      <div className="flex flex-col">
-        <a className="mb-4">TOP ITEMS</a>
-        <a href={`/products/1`}>Pepperoni</a>
-        <a href={`/products/2`}>Swiss Mushroom</a>
-        <a href={`/products/3`}>Barbeque Chicken</a>
-        <a href={`/products/4`}>Vegetarian</a>
-        <a href={`/products/5`}>Ham and Cheese</a>
+      <div className="flex flex-col mb-6 md:mb-0">
+        <a className="mb-2 md:mb-4">TOP ITEMS</a>
+        <a href={`/detail/1`}>Diavola</a>
+        <a href={`/detail/2`}>Margherita</a>
+        <a href={`/detail/3`}>Hawaiian</a>
+        <a href={`/detail/4`}>Vegetarian</a>
+        <a href={`/detail/5`}>Chicken Sandwich</a>
       </div>
-
-      <div className="flex flex-col">
-        <a className="mb-4">OTHERS</a>
+      <div className="flex flex-col mb-6 md:mb-0">
+        <a className="mb-2 md:mb-4">OTHERS</a>
         <a>Checkout</a>
         <a>Cart</a>
         <a>Product</a>
-        <a>Locatons</a>
+        <a>Locations</a>
         <a>Legal</a>
       </div>
       <div className="flex flex-col">
-        <a className="mb-4">SOCIAL MEDIA</a>
-        <div></div>
-        <p>Signup and get exclusive offers and coupon codes</p>
-        <button>SIGN UP</button>
+        <a className="mb-2 md:mb-4">SOCIAL MEDIA</a>
+        <p className="mb-2 md:mb-4">Signup and get exclusive offers and coupon codes</p>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">SIGN UP</button>
       </div>
     </div>
   );

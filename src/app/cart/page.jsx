@@ -4,7 +4,7 @@ export const metadata = {
     description: 'Your Order',
   }
 function Cart() {
-    return ( <div><p>Cart</p></div> );
+    return ( <div className="h-96"><p>Cart</p></div> );
 }
 
 export default Cart;

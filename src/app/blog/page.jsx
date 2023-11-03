@@ -1,10 +1,10 @@
 export const metadata = {
-    title: 'Cart',
-    description: 'Your Order',
+    title: 'Blog',
+    description: 'Read about us',
   }
-  
+
 function Blog() {
-    return ( <div><p>Blog</p></div> );
+    return ( <div className="h-96"><p>Blog</p></div> );
 }
 
 export default Blog;

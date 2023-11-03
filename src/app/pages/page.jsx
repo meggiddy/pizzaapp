@@ -3,7 +3,7 @@ export const metadata = {
     description: 'Explore',
   }
 function Pages() {
-    return ( <div><p>Pages</p></div> );
+    return ( <div className="h-96"><p>Pages</p></div> );
 }
 
 export default Pages;
