@@ -22,7 +22,6 @@ function Products() {
             key={fooditem.id}
             className="border border-solid border-slate-200 p-4 flex flex-col"
           >
-            {/* <Link to={"/products/[slug]/page.js"}> */}
             <Link href={`/detail/${fooditem.id}`}>
               <div className="flex justify-center items-center mb-2">
                 <Image
@@ -34,7 +33,6 @@ function Products() {
                 />
               </div>
             </Link>
-            {/* </Link> */}
             <p className="text-center mt-2">{fooditem.title}</p>
           </div>
         ))}
