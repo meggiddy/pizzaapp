@@ -1,4 +1,5 @@
 import { fooditems } from "@/foodlist";
+import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,9 +10,9 @@ export const metadata = {
 function Products() {
   return (
     <div>
-      <div className="flex gap-4">
-        <button type="button">Filter</button>
-        <div className="gap-4">
+      <div className="flex gap-4 m-10">
+        <button type="button" className=" p-2 rounded-full bg-yellow-300">Filter</button>
+        <div className="gap-4 p-2">
           <span>Showing all 9 results</span>
           <select name="dropdown">Default Sorting</select>
         </div>
@@ -20,7 +21,7 @@ function Products() {
         {fooditems.map((fooditem) => (
           <div
             key={fooditem.id}
-            className="border border-solid border-slate-200 p-4 flex flex-col"
+            className="border border-solid border-slate-200 p-4 flex flex-col items-center"
           >
             <Link href={`/detail/${fooditem.id}`}>
               <div className="flex justify-center items-center mb-2">
@@ -34,6 +35,10 @@ function Products() {
               </div>
             </Link>
             <p className="text-center mt-2">{fooditem.title}</p>
+            <button className="rounded-full flex flex-row text-white p-3 bg-yellow-500 justify-center">
+                <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
+                ORDER NOW
+              </button>
           </div>
         ))}
       </div>
