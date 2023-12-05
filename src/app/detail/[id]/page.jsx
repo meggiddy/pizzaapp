@@ -1,17 +1,22 @@
+'use client'
 import { fooditems } from "@/foodlist";
 import Image from "next/image";
+import { useState } from "react";
 
-export const metadata = {
-  title: "Product",
-  description: "Our Products",
-};
 
 export default function Page({ params }) {
+  const [cart, setCart] = useState([]);
+
   const product = fooditems.find((item) => item.id === parseInt(params.id, 10));
 
   if (!product) {
     return <div>Product not found</div>;
   }
+  const addToCart = () => {
+    setCart([...cart, product]);
+  };
+
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
     <div className="flex flex-col md:flex-row py-8 md:py-20 mx-4 md:mx-10">
@@ -35,13 +40,14 @@ export default function Page({ params }) {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 py-6">
           {/* Quantity: {product.quantity} */}
-          <button className="w-full md:w-auto p-4 bg-amber-400 rounded-lg">
+          <button onClick={addToCart} className="w-full md:w-auto p-4 bg-amber-400 rounded-lg">
             ADD TO CART
           </button>
           <button className="w-full md:w-auto p-4 hover:bg-slate-600 hover:text-white rounded-lg">
             LIKE
           </button>
         </div>
+        <div>Total: ${total.toFixed(2)}</div>
       </div>
     </div>
   );

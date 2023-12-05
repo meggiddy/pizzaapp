@@ -7,6 +7,8 @@ export const fooditems = [
       image:"/diavola.png",
       tags: ["Organic", "Salami", "Spicy"],
       addons: ["Extra Cheese", "Olives", "Onions", "Mushrooms"],
+      price: 10,
+      category: "Burga Pizza",
     },
     {
       id: 2,
@@ -16,6 +18,8 @@ export const fooditems = [
       image:"/margherita.png",
       tags: ["Classic", "Mozzarella", "Tomato"],
       addons: ["Basil", "Pepperoni", "Sausage", "Arugula"],
+      price: 20,
+      category: "Burga Pizza",
     },
     {
       id: 3,
@@ -25,6 +29,8 @@ export const fooditems = [
       image:"/hawaii.png",
       tags: ["Pineapple", "Ham", "Mozzarella"],
       addons: ["Bacon", "Green Peppers", "Jalapenos", "Red Onions"],
+      price: 60,
+      category: "Burga Pizza",
     },
     {
       id: 4,
@@ -34,6 +40,8 @@ export const fooditems = [
       image:"/vegan.png",
       tags: ["Vegetarian", "Mushrooms", "Bell Peppers"],
       addons: ["Artichoke Hearts", "Spinach", "Sun-Dried Tomatoes", "Feta Cheese"],
+      price: 10,
+      category: "Burga Pizza",
     },
     {
       id: 5,
@@ -43,6 +51,8 @@ export const fooditems = [
       image:"/chicken.png",
       tags: ["Chicken", "Bacon", "Lettuce", "Tomato"],
       addons: ["Avocado", "Swiss Cheese", "Pickles", "Honey Mustard"],
+      price: 20,
+      category: "Burga Pizza",
     },
     {
       id: 6,
@@ -52,5 +62,7 @@ export const fooditems = [
       image:"/turkey.png",
       tags: ["Turkey", "Avocado", "Lettuce", "Tomato"],
       addons: ["Bacon", "Cheddar Cheese", "Cranberry Sauce", "Dijon Mustard"],
+      price: 30,
+      category: "Burga Pizza",
     },
   ];
