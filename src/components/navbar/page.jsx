@@ -11,10 +11,10 @@ import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Products", href: "products", current: false },
-  { name: "Pages", href: "pages", current: false },
-  { name: "Blog", href: "blog", current: false },
-  { name: "Contact", href: "contact", current: false },
+  { name: "Products", href: "/products", current: false },
+  { name: "Pages", href: "/pages", current: false },
+  { name: "Blog", href: "/blog", current: false },
+  { name: "Contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {

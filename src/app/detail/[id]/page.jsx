@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 
-export default function Page({ params }) {
+export default function Page() {
   const [cart, setCart] = useState([]);
 
   const product = fooditems.find((item) => item.id === parseInt(params.id, 10));
