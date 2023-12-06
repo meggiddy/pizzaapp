@@ -1,11 +1,12 @@
 'use client'
+import { useCart } from "@/app/CartProvider/CartContext";
 import { fooditems } from "@/foodlist";
 import Image from "next/image";
 import { useState } from "react";
 
 
-export default function Page() {
-  const [cart, setCart] = useState([]);
+export default function Page({ params }) {
+  const [cart, setCart] = useCart();
 
   const product = fooditems.find((item) => item.id === parseInt(params.id, 10));
 
