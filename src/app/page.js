@@ -11,7 +11,6 @@ import { CartProvider } from "./CartProvider/CartContext";
 
 export default function Home() {
   return (
-    <CartProvider>
       <div className="">
         <div className="flex flex-col-reverse lg:flex-row justify-between py-8 lg:py-32 mx-4 lg:mx-10">
           <div className="text-center lg:text-left lg:pt-40 lg:ml-16">
@@ -96,6 +95,5 @@ export default function Home() {
         <Strength />
         <Feedback />
       </div>
-    </CartProvider>
   );
 }

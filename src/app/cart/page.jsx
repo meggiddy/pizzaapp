@@ -6,10 +6,10 @@ import { useCart } from "../CartProvider/CartContext";
 
 
 function Cart() {
-  const { cart } = useCart();
+/*   const { cart } = useCart();
 
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-
+ */
   const statusClass = (index) => {
     const status = 0;
 
@@ -45,7 +45,7 @@ function Cart() {
                 </td>
 
                 <td>
-                  <span className="">Total:${total.toFixed(2)}</span>
+                  {/* <span className="">Total:${total.toFixed(2)}</span> */}
                 </td>
               </tr>
             </table>
