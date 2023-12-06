@@ -65,7 +65,7 @@ function Cart() {
               </td>
 
               <td>
-                <span className="">Total: ${cart.total}</span>
+                {/* <span className="">Total: ${cart.total}</span> */}
               </td>
             </tr>
           </div>
@@ -134,7 +134,7 @@ function Cart() {
           <div className="flex flex-col w-3/4 md:w-3/5 lg:w-10/12 max-h-80 text-white bg-slate-800 p-12 mx-auto lg:mx-0">
             <h2 className="font-extrabold text-2xl mb-7">CART TOTAL</h2>
             <div className="">
-              <b className="mr-5">Subtotal:</b>${cart.total}
+              {/* <b className="mr-5">Subtotal:</b>${cart.total} */}
             </div>
 
             <div>
@@ -142,7 +142,7 @@ function Cart() {
             </div>
 
             <div>
-              <b className="mr-5">Total:</b>${cart.total}
+              {/* <b className="mr-5">Total:</b>${cart.total} */}
             </div>
 
             <button
