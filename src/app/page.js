@@ -7,7 +7,7 @@ import { fooditems } from "@/foodlist";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import Strength from "@/components/strength/page";
 import Feedback from "@/components/feedback/page";
-import { CartProvider } from "./CartProvider/page";
+import { CartProvider } from "./CartProvider/CartContext";
 
 export default function Home() {
   return (
