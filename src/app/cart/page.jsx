@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
-import { useCart } from "../CartProvider/CartContext";
-import "/cart.css";
+import styles from './cart.module.css';
+
 
 
 function Cart() {
