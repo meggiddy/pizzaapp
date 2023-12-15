@@ -37,7 +37,7 @@ export default function Home() {
                 alt="pizza image"
               />
               <Image
-                className=""
+                className="hidden"
                 src="/pizza-onion.png"
                 width={80}
                 height={80}
@@ -45,7 +45,7 @@ export default function Home() {
               />
             </div>
             <Image
-              className="ml-32"
+              className="ml-32 hidden"
               src="/side.png"
               width={200}
               height={200}
