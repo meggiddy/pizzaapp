@@ -9,11 +9,23 @@ import Strength from "@/components/strength/page";
 import Feedback from "@/components/feedback/page";
 import { CartProvider } from "./CartProvider/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
+import Cards from "@/components/cards/page";
 
 export default function Home() {
+  const Card = fooditems.map((item) => (
+    <Link key={item.id} href={`/detail/${item.id}`}>
+      <Cards
+        id={item.id}
+        image={item.image}
+        title={item.title}
+        price={item.price}
+        description={item.description}
+      />
+    </Link>
+  ));
   return (
     <div className="">
-      <div className="lg:col-span-3 px-4 lg:pl-10  flex items-center lg:items-start">
+      <div className="lg:col-span-3 px-4 lg:pl-10 flex-col-reverse lg:flex-row  flex items-center lg:items-start">
         <div className=" h-3/4 flex flex-col items-center lg:items-start  gap-2 lg:gap-5  lg:mt-52">
           <h1 className="font-extrabold text-center text-slate-900 weight mr-10 lg:mr-0 text-4xl md:text-5xl lg:text-7xl">
             Handmade,
@@ -51,7 +63,7 @@ export default function Home() {
             />
           </div>
           <Image
-            className="ml-32"
+            className="lg:ml-32"
             src="/side.png"
             width={200}
             height={200}
@@ -64,29 +76,7 @@ export default function Home() {
         <p className="text-red-500">Popular Dishes</p>
         <strong className="text-2xl">Browse our Menu</strong>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-10">
-          {fooditems.map((fooditem) => (
-            <div
-              key={fooditem.id}
-              className="border border-solid border-slate-200 p-4 flex flex-col"
-            >
-              <Link href={`/detail/${fooditem.id}`}>
-                <div className="flex justify-center items-center mb-2">
-                  <Image
-                    src={fooditem.image}
-                    alt="food"
-                    width={180}
-                    height={180}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-              </Link>
-              <p className="text-center m-2">{fooditem.title}</p>
-              <button className="rounded-full flex flex-row text-white p-3 bg-yellow-500 justify-center">
-                <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
-                ORDER NOW
-              </button>
-            </div>
-          ))}
+          {Card}
         </div>
         <div className="flex float-right">
           <Image
