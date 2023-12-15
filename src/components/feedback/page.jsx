@@ -7,7 +7,7 @@ function Feedback() {
         <p className="text-red-600 mb-2">Customer Feedback</p>
         <strong className="text-2xl">Client Testimonials</strong>
       </div>
-      <div className="flex gap-4">
+      <div className="flex lg:flex-row gap-4 flex-col">
         <div className="flex border rounded-sm flex-col items-center">
           <div className="rounded-full overflow-hidden mt-6">
             <Image width={80} height={80} alt="client" src="/patrik.jpg" />
